@@ -1,0 +1,175 @@
+/* Reset some default styles */
+body, h1, p, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 8px;
+}
+
+
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1.5px dotted grey;
+    height: 68px;
+    width:fit-content;
+    overflow: hidden;
+  
+}
+
+*::before,
+*::after,
+* {
+    box-sizing: border-box;
+}
+
+
+
+.image1 {
+   width:fit-content;
+   height: 100px;
+   max-width: 120%; 
+   max-height: 120%; 
+   display: block;
+   padding-top: 10px;
+   height: auto;
+}
+
+.navbar a {
+    
+    float: left;
+    display: block;
+    color: rgb(58, 58, 58);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 50px;
+}
+
+.product-info h1 {
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    margin-bottom: 20px;
+    font-size: small;
+    text-align: justify;
+}
+
+.product-info .price {
+    font-size: 1.5em;
+    color: #b12704;
+    margin-bottom: 20px;
+}
+
+.rprice {
+    text-decoration: line-through;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+.cta-button, .learn-more-button {
+    
+    color:black;
+    border: 2px solid #000;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+.cta-button:hover {
+    background-color: aquamarine;
+}
+
+
+
+.learn-more-button:hover {
+    background-color: #9dc3ed;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .product {
+        flex-direction: column;
+    }
+
+    .product-item {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .product-item img {
+        max-width: 50%;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .product-info {
+        max-width: 50%;
+    }
+}
